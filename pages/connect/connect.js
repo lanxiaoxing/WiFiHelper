@@ -5,9 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    ssid: 'WiFi名称',
+    ssid: 'H3C_FFF8AC',
     bssid: '设备MAC',
-    password: '密码'
+    password: 'leiqiao0829ß'
   },
 
   /**
