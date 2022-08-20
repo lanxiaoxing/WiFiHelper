@@ -10,7 +10,7 @@
         {
           "name": "参数测试",
           "pathName": "pages/connect/connect",
-          "query": "ssid=H3C_FFF8AC&password=leiqiao082",
+          "query": "ssid=H3C_FFF8AC&password=leiqiao08",
           "launchMode": "default",
           "scene": 1011
         },

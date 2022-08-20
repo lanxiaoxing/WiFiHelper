@@ -5,9 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    ssid: 'H3C_FFF8AC',
+    ssid: 'myssid',
     bssid: '设备MAC',
-    password: 'leiqiao0829ß'
+    password: 'mypassword'
   },
 
   /**
@@ -17,6 +17,7 @@ Page({
     let ssid = options.ssid;
     let bssid = options.bssid;
     let password = options.password;
+    console.log(password);
     this.setData({
       ssid: ssid,
       bssid: bssid,
@@ -78,12 +79,12 @@ Page({
   errorDialog: function(res) {
     const that = this;
     wx.showModal({
-      title: '连接失败',
+      title: '连接失败，请检查密码是否正确',
       content: res.errMsg,
-      confirmText: '复制密码',
+      confirmText: '确认',
       success (res) {
         if (res.confirm) {
-          that.copyPassword();
+          //that.copyPassword();
         } else if (res.cancel) {
           console.log('cancel')
         }
