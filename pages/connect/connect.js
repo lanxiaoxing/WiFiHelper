@@ -17,7 +17,6 @@ Page({
     let ssid = options.ssid;
     let bssid = options.bssid;
     let password = options.password;
-    console.log(password);
     this.setData({
       ssid: ssid,
       bssid: bssid,
@@ -67,7 +66,9 @@ Page({
         })
       },
       fail: (res) => {
-        that.errorDialog(res);
+        wx.showToast({
+          title: '连接失败',
+        })
       }
     })
   },
@@ -78,23 +79,11 @@ Page({
    */
   errorDialog: function(res) {
     const that = this;
-    wx.showModal({
-      title: '连接失败，请检查密码是否正确',
-      content: res.errMsg,
-      confirmText: '确认',
-      success (res) {
-        if (res.confirm) {
-          //that.copyPassword();
-        } else if (res.cancel) {
-          console.log('cancel')
-        }
-      },
-      fail(res) {
-        wx.showToast({
-          title: res.errMsg,
-        })
-      }
-    });
+    // wx.showModal({
+    //   title: '连接失败，请检查密码是否正确',
+    //   content: res.errMsg,
+    //   confirmText: '确认'
+    // });
   },
 
   /**
