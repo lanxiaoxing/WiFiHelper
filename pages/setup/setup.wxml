@@ -1,0 +1,9 @@
+<view>
+  <form bindsubmit="formSubmit">
+    <text>WiFi名称</text>
+    <input type='text' name='wifiName' placeholder-style='font-size:28rpx;' placeholder='请输入WiFi名称'></input>
+    <text>WiFi密码</text>
+    <input type='text' name='wifiPassword' placeholder-style='font-size:28rpx;' placeholder='请输入WiFi密码'></input>
+    <button form-type='submit'>生成WiFi码</button>
+  </form>
+</view>

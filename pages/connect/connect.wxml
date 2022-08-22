@@ -3,4 +3,6 @@
   <image src="/images/icon_wifi.png" mode="aspectFit"></image>
   <text>WiFi名称：{{ssid}}</text>
   <button bindtap="connectWifi">点击连接</button>
+  <text></text>
+  <button bindtap="jumptoSetupWifi">WiFi设置</button>
 </view>

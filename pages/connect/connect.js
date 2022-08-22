@@ -46,6 +46,11 @@ Page({
       },
     })
   },
+  jumptoSetupWifi: function() {
+    wx.navigateTo({
+      url: '../setup/setup',
+    })
+  },
 
   /**
    * 连接WiFi
