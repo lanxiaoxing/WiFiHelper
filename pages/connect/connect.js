@@ -6,7 +6,7 @@ Page({
    */
   data: {
     ssid: 'myssid',
-    bssid: '设备MAC',
+    bssid: 'mymac',
     password: 'mypassword'
   },
 
